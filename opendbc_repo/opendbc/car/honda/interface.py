@@ -256,7 +256,7 @@ class CarInterface(CarInterfaceBase):
     for fw in car_fw:
       if fw.ecu == "eps" and b"," in fw.fwVersion:
         eps_modified = True
-        ret.dashcamOnly = False
+        stock_cp.dashcamOnly = False
 
     if candidate == CAR.HONDA_CIVIC:
       if eps_modified:
